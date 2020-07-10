@@ -23,7 +23,7 @@
 
             <div class="form-group">
                 <!-- onclick="myFunction(); return false;"-->
-                <button type="button" class="btn btn-success" id="btn">Enter</button>
+                <button type="button" class="btn btn-success" id="btn"  >Enter</button>
             </div>
         </form>
 
@@ -42,16 +42,11 @@
     
     <script>
         $(document).ready(function() {
-
             $("#btn").click(function() {
-                
                 var name = $("#name").val();
-                $.post("ajax.php", {ajax_name:name}, function(response) {
-                     
+                $.get("ajax.php", {ajax_name:name}, function(response) {
                     $('.send').html(response);
-                    
                 }).fail(function(error) {
-
                     console.log(error.statusText);
                 });
             });

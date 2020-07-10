@@ -1,11 +1,11 @@
 <?php
 
-if(isset($_POST['ajax_name'])){
+if(isset($_GET['ajax_name'])){
 
-    // echo $_POST["ajax_name"];
+     echo $_GET["ajax_name"].'<br />';
 
     $store = array('tijani','abdellatif','alex');
-
+     
     foreach($store as $names){
 
         echo $names.'<br />';
