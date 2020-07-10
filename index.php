@@ -49,7 +49,24 @@
                 }).fail(function(error) {
                     console.log(error.statusText);
                 });
-            });
+
+
+            // $.ajax({
+                  
+            //     type : 'POST',
+            //     url : 'ajax.php',
+            //     data : {ajax_name:name},
+            //     success : function(response){
+        
+            //         $(".send").html(response);
+            //     }
+
+            // }).fail(function(error){
+
+            //     alert(error.statusText);
+            // })
+             });
+
         });
     </script>
    
