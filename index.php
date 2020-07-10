@@ -13,30 +13,43 @@
 
     <div class="container" style="margin-top : 40px;">
 
-        <form action="">
+        <form action="" class="formu">
 
-            <!-- onclick="myFunction(); return false;"-->
-            <button type="button" class="btn btn-success" id="btn">Enter</button>
+            <div class="form-group">
 
+                <input type="text" id="name" name="text" class="form-control" placeholder="Enter name ...">
+
+            </div>
+
+            <div class="form-group">
+                <!-- onclick="myFunction(); return false;"-->
+                <button type="button" class="btn btn-success" id="btn">Enter</button>
+            </div>
         </form>
 
         <div class="land">
 
-            <p class="send"></p>
+            <p class="send">
+
+            </p>
 
 
         </div>
     </div>
     <script src="assets/js/script.js"></script>
     <script src="assets/js/jquery.min.js"></script>
+
+    
     <script>
         $(document).ready(function() {
 
             $("#btn").click(function() {
-
-                $.post("ajax.php", function(response) {
-
-                    console.log(response);
+                
+                var name = $("#name").val();
+                $.post("ajax.php", {ajax_name:name}, function(response) {
+                     
+                    $('.send').html(response);
+                    
                 }).fail(function(error) {
 
                     console.log(error.statusText);
@@ -44,6 +57,7 @@
             });
         });
     </script>
+   
 
 </body>
 
