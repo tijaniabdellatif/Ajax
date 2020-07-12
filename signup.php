@@ -146,7 +146,7 @@
                     </div>
                     <div class="group">
 
-                        <input type="submit" name="signup" class="btn signup-btn" value="Create Account">
+                        <input type="submit" name="signup" class="btn account-btn" value="Create Account">
 
 
                     </div>
@@ -161,6 +161,8 @@
 
 
     <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/script.js"></script>
+
 </body>
 
 </html>
