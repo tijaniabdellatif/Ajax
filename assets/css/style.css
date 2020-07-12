@@ -573,9 +573,13 @@ body {
 .emoji{
     height:5vh;
     width:100%;
-  
-}
 
+    
+}
+/* .emoji:hover{
+
+     transform: scale(1.5);
+} */
 .emoji-same{
 
     width:2rem;
@@ -726,4 +730,5 @@ top:33%;
         right:35%;
 
     }
+    
 }

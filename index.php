@@ -16,6 +16,7 @@
         </section>
     </div>
     <?php include 'components/js.php' ?>
+    <script src="assets/js/emoji.js"></script>
 </body>
 
 </html>
