@@ -132,6 +132,7 @@ body {
 .group {
 
     margin-bottom: 1.5rem;
+    position: relative;
 }
 
 .control {
@@ -465,16 +466,16 @@ body {
 
     display: flex;
     justify-content: flex-end;
-     max-width: 50%;
-     width: auto;
-
-}
-/* 
-.right-msg-area {
-
    
 
-} */
+}
+
+.right-msg-area {
+
+    max-width: 50%;
+    width: auto;
+
+} 
 
 .right-msg {
     padding: 1rem;
@@ -665,27 +666,64 @@ top:33%;
          display:none;
     }
 
-    #right-area{
-        width:100%;
-    }
+ 
     #sidebar::before{
 
         width:30%;
     }
+
+       #right-area {
+           width: 100%;
+       }
+
+       .messages {
+           height: 70vh;
+       }
 
     .left-message{
         max-width: 100%;
         width:auto;
     }
 
-    .right-messages {
-         max-width: 100%;
+    .right-msg-area {
+         max-width: 90%;
          width:auto;
     }
-    .messages{
-        height:70vh;
-    }
+    
     .chat-form{
         height:15vh;
+    }
+    ::-webkit-input-placeholder{
+        font-size:.9rem ;
+        font-family: sans-serif;
+        color:var(--color-black);
+    }
+    .form-grid{
+
+        max-width:100%;
+        width:auto;
+    }
+    .account-btn{
+        
+        position: absolute;
+        max-width:100%;
+        width:70%;
+        vertical-align: middle;
+        text-align: center;
+        transform:translate(25%,25%);
+      
+    }
+    .link {
+         
+        position: absolute;
+        color: #999;
+        font-size: 1.5rem;
+        text-decoration: none;
+        text-align: left;
+        font-weight: 300;
+        padding-top: 1.5rem;
+        top:65px;
+        right:35%;
+
     }
 }

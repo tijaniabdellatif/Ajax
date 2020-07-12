@@ -3,15 +3,11 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
+   <?php include 'components/css.php' ?>
     <title>Create New Account</title>
 </head>
-
 <body>
-
+    
     <!-- <div class="container">
     <p>Parent class</p>
     <div class="child">
@@ -104,74 +100,22 @@
 
 
     </div> -->
-
-
     <div class="sign-up">
-
         <div class="account-left">
-
             <div class="account-text">
-
                 <h1>Let's Chat</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
                     Et praesentium veritatis deserunt adipisci, placeat perferendis
                 </p>
             </div>
-
         </div>
         <!--close accounnt-left container-->
-
-
         <div class="account-right">
-
-            <div class="form-area">
-
-                <form action="" method="post">
-                    <div class="group">
-
-                        <h2 class="form-heading">
-                           User Login
-                        </h2>
-
-                    </div>
-
-                    <div class="group">
-
-                        <input type="email" name="full_email" class="control" placeholder="Enter Your Email">
-
-
-                    </div>
-                    <div class="group">
-
-                        <input type="password" name="passsword" class="control" placeholder="Create password...">
-
-
-                    </div>
-                    
-                    <div class="group">
-
-                        <input type="submit" name="login" class="btn account-btn" value="Login">
-
-
-                    </div>
-                    <div class="group">
-
-                        <a href="signup.php" class="link">Create new account</a>
-
-                    </div>
-                </form>
-
-            </div>
-
+          <?php include 'components/login_component.php' ?>
         </div>
-
     </div>
     <!--close acoount  container-->
-
-
-    <script src="assets/js/jquery.min.js"></script>
+    <?php include 'components/js.php' ?>
     <script src="assets/js/script.js"></script>
-
 </body>
-
 </html>

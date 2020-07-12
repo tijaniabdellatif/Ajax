@@ -2,80 +2,20 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <title>Messenger - App</title>
+    <?php include 'components/css.php' ?>
 </head>
 
 <body>
-    <nav id="nav">
-
-        nav Area
-
-
-    </nav>
-
+    <?php include 'components/nav.php' ?>
     <div class="chat-container">
-
-        <section id="sidebar">
-
-            <ul class="left-ul">
-                <li><a href=""><span class="profile-img-span"><img src="assets/img/1.jpg" alt="Profile image" class="profil-img"></span></a></li>
-                <li><a href="">Tijani Abdellatif<span class="cool-hover"></span></a></li>
-                <li><a href="<?php echo $_SERVER['PHP_SELF']?>">Change Name<span class="cool-hover"></span></a></li>
-                <li><a href="changepass.php">Change Password<span class="cool-hover"></span></a></li>
-                <li><a href="">110 User Online<span class="cool-hover"></span></a></li>
-            </ul>
-
-
-        </section>
-
+        <?php include 'components/sidebar.php' ?>
         <section id="right-area">
-
-            <div class="form-section">
-
-                <div class="form-grid">
-                    <form action="" method="post">
-                        <div class="group">
-
-                            <h2 class="form-heading">
-                                Change Name
-                            </h2>
-
-                        </div>
-
-
-                        <div class="group">
-
-                            <input type="text" name="current_name" class="control" placeholder="Name...">
-
-
-                        </div>
-                        <div class="group">
-
-                            <input type="submit" name="change_name" class="btn account-btn" value="Save">
-
-                        </div>
-
-                    </form>
-                </div>
-
-            </div>
-
+            <?php include "components/changename.php" ?>
         </section>
-
-
     </div>
-
-
-
-
-    <script src="assets/js/jquery.min.js"></script>
+    <?php include 'components/js.php' ?>
     <script src="assets/js/script.js"></script>
-
 </body>
 
 </html>
