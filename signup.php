@@ -1,3 +1,13 @@
+<?php 
+
+include 'init.php';
+
+$db = new Database();
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
