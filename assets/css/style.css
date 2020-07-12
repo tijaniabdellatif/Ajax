@@ -50,101 +50,102 @@ html {
     padding:10px;
     border:1px solid red;
     width:25%;
-}*/ 
+}*/
 
 /*=== Website styles=== */
 
 /*===Variables===*/
 :root {
 
-    --color-green : #55c57a;
-    --color-green-light : #7ed56f;
-    --color-green-dark : #28b485;
-    --color-silver:#e4e7ea;
-    --color-white : #fff;
-    --color-black : #111;
+    --color-green: #55c57a;
+    --color-green-light: #7ed56f;
+    --color-green-dark: #28b485;
+    --color-silver: #e4e7ea;
+    --color-white: #fff;
+    --color-black: #111;
+    --color-silver-text: #54667a;
 }
 
-html{
+html {
     font-size: 10px;
     font-weight: 400;
 }
 
-body{
+body {
     font-family: "Poppins", sans-serif;
 }
 
 * {
-margin:0;
-padding:0;
-box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 /*===Style signup and login form===*/
-.sign-up{
+.sign-up {
 
     display: flex;
     display: -webkit-flex;
-    width:100%;
-    height:100vh;
+    width: 100%;
+    height: 100vh;
 
 }
 
-.account-left{
+.account-left {
 
-width:70%;
-background-image: linear-gradient(to right bottom,rgba(98, 197, 122, 0.8) 50% ,transparent 50%), url(../img/bg1.jpg);
-background-repeat: no-repeat;
-background-size: cover;
-background-position: center;
-position: relative;
-}
-
-.account-text{
-
-    position: absolute;
-    top:20%;
-    left:40%;
-    transform:translate(-50%,-50%);
-    font-size: 1.5rem;
-    color:var(--color-white);
-}
-
-.account-right{
-
-    width:30%;
+    width: 70%;
+    background-image: linear-gradient(to right bottom, rgba(98, 197, 122, 0.8) 50%, transparent 50%), url(../img/bg1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     position: relative;
 }
 
-.form-area{
+.account-text {
 
-    width:80%;
     position: absolute;
-    left:50%;
-    bottom:50%;
-    transform: translate(-50% , 50%);
+    top: 20%;
+    left: 40%;
+    transform: translate(-50%, -50%);
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.account-right {
+
+    width: 30%;
+    position: relative;
+}
+
+.form-area {
+
+    width: 80%;
+    position: absolute;
+    left: 50%;
+    bottom: 50%;
+    transform: translate(-50%, 50%);
     text-align: center;
 }
 
-.group{
+.group {
 
     margin-bottom: 1.5rem;
 }
 
-.control{
+.control {
 
-    width:100%;
-    display:block;
+    width: 100%;
+    display: block;
     padding: 1.1rem 1rem;
     border-radius: 3px;
-    border : 1px solid var(--color-silver);
+    border: 1px solid var(--color-silver);
     transition: all 1s;
 }
 
-.control:focus{
+.control:focus {
 
     outline: none;
-    border:1px solid var(--color-green-dark);
+    border: 1px solid var(--color-green-dark);
 }
 
 .file {
@@ -153,82 +154,230 @@ position: relative;
 
 #file-label {
 
-    display:block;
-    width:100%;
-    padding:1.1rem 1rem;
-    border:1px solid var(--color-silver);
+    display: block;
+    width: 100%;
+    padding: 1.1rem 1rem;
+    border: 1px solid var(--color-silver);
     border-radius: 3px;
     font-size: 1.2rem;
     text-align: left;
-   
+
 }
 
-.upload-icon{
+.upload-icon {
 
-    margin-right:1.5rem;
+    margin-right: 1.5rem;
     font-size: 1.7rem;
-    color:var(--color-green-dark);
+    color: var(--color-green-dark);
 }
 
-#file-label:hover{
+#file-label:hover {
 
     cursor: pointer;
 }
 
-.btn{
+.btn {
 
     display: block;
     padding: 1.2rem .9rem;
     font-size: 1.5rem;
     border-radius: 3rem;
     text-transform: uppercase;
-    border:0px;
-    color:var(--color-white);
+    border: 0px;
+    color: var(--color-white);
 
 }
 
-.account-btn{
+.account-btn {
 
-    width:100%;
-    background:linear-gradient(to right, var(--color-green-light),var(--color-green-dark)) ;
-    box-shadow: 0 .8rem .6rem -.6px rgba(0,0,0,0.3);
+    width: 100%;
+    background: linear-gradient(to right, var(--color-green-light), var(--color-green-dark));
+    box-shadow: 0 .8rem .6rem -.6px rgba(0, 0, 0, 0.3);
 }
 
 .account-btn:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
-.form-heading{
+.form-heading {
 
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: 400;
-   border-bottom:.09rem solid var(--color-silver);
-   padding-bottom: 1.5rem;
-   letter-spacing: .2rem;
-   text-align: left;
-   color:#999;
+    border-bottom: .09rem solid var(--color-silver);
+    padding-bottom: 1.5rem;
+    letter-spacing: .2rem;
+    text-align: left;
+    color: #999;
 }
 
-.link{
+.link {
 
-     display:block;
-    color:#999;
+    display: block;
+    color: #999;
     font-size: 1.5rem;
     text-decoration: none;
     text-align: left;
     font-weight: 300;
     padding-top: 1.5rem;
-   
+
 }
 
-@media (max-width:765px){
 
-    .account-left{
+/*===Design chat area===*/
+#nav {
+
+    width: 100%;
+    height: 10vh;
+    background: linear-gradient(to right, var(--color-green-light), var(--color-green-dark));
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.5);
+}
+
+.chat-container {
+
+    display: flex;
+}
+
+
+#sidebar {
+
+    width: 20%;
+    height: 90vh;
+    background-color: var(--color-white);
+    box-shadow: .8rem 0 .6rem -1rem rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#sidebar::before {
+    position: absolute;
+    content: "Profile";
+    width: 100%;
+    height: 10vh;
+    top: -10vh;
+    background: linear-gradient(to right, var(--color-green-light), var(--color-green-dark));
+    box-shadow: 3px -2px 5px 0px rgba(0, 0, 0, 0.2);
+    line-height: 10vh;
+    text-align: center;
+    font-size: 1.5rem;
+    color: var(--color-white);
+}
+
+.left-ul {
+
+    margin: 3rem 0;
+    padding: 0;
+
+}
+
+.left-ul li {
+
+    list-style: none;
+    text-align: center;
+
+
+}
+
+.left-ul li a {
+
+    text-decoration: none;
+    display: block;
+    padding: 1.5rem 0;
+    font-size: 1.3rem;
+    color: var(--color-silver-text);
+    position : relative;
+    font-weight: 300;
+
+}
+
+.cool-hover {
+
+    position: absolute;
+    top:0;
+    left:0;
+    width:0;
+    height:100%;
+    background-color: rgba(0,0,0,0.2);
+    transition: all .3s;
+
+}
+
+.left-ul li:hover .cool-hover{
+
+    width:100%;
+
+}
+
+.profile-img-span {
+
+    display: block;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+.profil-img {
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
+    transition: all .3s;
+}
+
+.profile-img-span:hover .profil-img {
+
+    transform: scale(1.5);
+
+}
+
+.left-ul li:not(:first-child):hover {
+
+    background: linear-gradient(to right, var(--color-green-light), var(--color-green-dark));
+
+}
+
+.left-ul li:hover a {
+
+
+    color:var(--color-white);
+}
+
+
+
+#right-area {
+
+
+    width: 80%;
+    background-color: paleturquoise;
+}
+
+.messages {
+
+    width: 100%;
+    height: 75vh;
+    background-color: red;
+}
+
+.chat-form {
+
+    width: 100%;
+    height: 15vh;
+    background-color: black;
+}
+
+
+
+
+
+
+/*=== Responsive media queries ===*/
+@media (max-width:765px) {
+
+    .account-left {
         display: none;
     }
 
-    .account-right{
+    .account-right {
         width: 100%;
     }
 }
