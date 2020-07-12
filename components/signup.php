@@ -1,6 +1,6 @@
 <div class="form-area">
 
-    <form action="" method="post">
+    <form action="signup.php" method="post" enctype="multipart/form-data">
         <div class="group">
 
             <h2 class="form-heading">
@@ -12,7 +12,15 @@
         <div class="group">
 
             <input type="text" name="full_name" class="control" placeholder="Enter Full Name">
+      
+             <div class="name-error error">
 
+             <?php if(isset($name_error)) :  ?>
+               
+                <?php echo $name_error; ?>
+
+             <?php endif; ?>
+             </div>
 
         </div>
         <div class="group">
