@@ -23,7 +23,7 @@
         <section id="sidebar">
 
             <ul class="left-ul">
-                <li><a href=""><span class="profile-img-span"><img src="assets/img/pro1.jpg" alt="Profile image" class="profil-img"></span></a></li>
+                <li><a href=""><span class="profile-img-span"><img src="assets/img/1.jpg" alt="Profile image" class="profil-img"></span></a></li>
                 <li><a href="">Tijani Abdellatif<span class="cool-hover"></span></a></li>
                 <li><a href="">Change Name<span class="cool-hover"></span></a></li>
                 <li><a href="">Change Password<span class="cool-hover"></span></a></li>
@@ -38,7 +38,7 @@
                 <div class="left-message common-margin">
                     <div class="sender-img-block">
 
-                        <img src="assets/img/pro1.jpg" class="sender-img">
+                        <img src="assets/img/1.jpg" class="sender-img">
                         <span class="online-icon"></span>
                     </div>
                     <div class="left-msg-area">
@@ -65,7 +65,7 @@
                 <div class="left-message common-margin">
                     <div class="sender-img-block">
 
-                        <img src="assets/img/pro1.jpg" class="sender-img">
+                        <img src="assets/img/1.jpg" class="sender-img">
                         <span class="offline-icon"></span>
 
                     </div>
@@ -111,7 +111,7 @@
                 <div class="left-message common-margin">
                     <div class="sender-img-block">
 
-                        <img src="assets/img/pro1.jpg" class="sender-img">
+                        <img src="assets/img/1.jpg" class="sender-img">
 
                     </div>
                     <div class="left-msg-area">
@@ -227,8 +227,45 @@
 
 
             <div class="chat-form">
+                <div class="chat-container">
 
-                chat form
+                    <div class="form-input">
+
+                        <textarea class="textarea-control" placeholder="Type your Message..."></textarea>
+
+                    </div>
+                    <div class="form-input">
+
+                        <label for="upload-files" id="upload-label">
+                            <i class="fas fa-paperclip fa-uploads"></i>
+                            <i class="fas fa-file-image fa-uploads"></i>
+                        </label>
+
+                        <input type="file" id="upload-files" class="upload-files">
+
+                    </div>
+                </div>
+            </div>
+
+            <div class="emoji">
+
+                <img src="assets/img/emoji/em.png" class="emoji-same">
+                <img src="assets/img/emoji/em1.png" class="emoji-same">
+                <img src="assets/img/emoji/em2.png" class="emoji-same">
+                <img src="assets/img/emoji/em3.png" class="emoji-same">
+                <img src="assets/img/emoji/em4.png" class="emoji-same">
+                <img src="assets/img/emoji/em5.png" class="emoji-same">
+                <img src="assets/img/emoji/em6.png" class="emoji-same">
+                <img src="assets/img/emoji/em7.png" class="emoji-same">
+                <img src="assets/img/emoji/em8.png" class="emoji-same">
+                <img src="assets/img/emoji/em9.png" class="emoji-same">
+                <img src="assets/img/emoji/em10.png" class="emoji-same">
+                <img src="assets/img/emoji/em11.png" class="emoji-same">
+                <img src="assets/img/emoji/em12.png" class="emoji-same">
+                <img src="assets/img/emoji/em13.png" class="emoji-same">
+                <img src="assets/img/emoji/em14.png" class="emoji-same">
+                <img src="assets/img/emoji/em15.png" class="emoji-same">
+
 
             </div>
         </section>
