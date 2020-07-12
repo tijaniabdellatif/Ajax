@@ -39,7 +39,7 @@
                     <div class="sender-img-block">
 
                         <img src="assets/img/pro1.jpg" class="sender-img">
-
+                        <span class="online-icon"></span>
                     </div>
                     <div class="left-msg-area">
 
@@ -66,6 +66,7 @@
                     <div class="sender-img-block">
 
                         <img src="assets/img/pro1.jpg" class="sender-img">
+                        <span class="offline-icon"></span>
 
                     </div>
                     <div class="left-msg-area">
