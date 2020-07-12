@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,700;1,900&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,900;1,100;1,300;1,400;1,600;1,700;1,900&display=swap" rel="stylesheet">
     <title>Create New Account</title>
 </head>
 
@@ -111,13 +109,13 @@
     <div class="sign-up">
 
         <div class="account-left">
-            
+
             <div class="account-text">
-            
+
                 <h1>Let's Chat</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                 Et praesentium veritatis deserunt adipisci, placeat perferendis 
-                 </p>
+                    Et praesentium veritatis deserunt adipisci, placeat perferendis
+                </p>
             </div>
 
         </div>
@@ -132,17 +130,11 @@
                     <div class="group">
 
                         <h2 class="form-heading">
-                            Create An Account
+                           User Login
                         </h2>
 
                     </div>
 
-                    <div class="group">
-
-                        <input type="text" name="full_name" class="control" placeholder="Enter Full Name">
-
-
-                    </div>
                     <div class="group">
 
                         <input type="email" name="full_email" class="control" placeholder="Enter Your Email">
@@ -155,21 +147,16 @@
 
 
                     </div>
-                    <div class="group">
-                        <label for="file" id="file-label"><i class="fas fa-cloud-upload-alt upload-icon"></i> Choose
-                            image</label>
-                        <input type="file" name="img" class="file" id="file">
-
-                    </div>
+                    
                     <div class="group">
 
-                        <input type="submit" name="signup" class="btn account-btn" value="Create Account">
+                        <input type="submit" name="login" class="btn account-btn" value="Login">
 
 
                     </div>
                     <div class="group">
 
-                        <a href="login.php" class="link">Already Have an Account ?</a>
+                        <a href="signup.php" class="link">Create new account</a>
 
                     </div>
                 </form>
