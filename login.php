@@ -10,12 +10,12 @@ if (isset($_POST['login'])) {
 
     if (empty($email)) {
 
-        $email_error = '<div class="errno" style="visibility:hidden;"">Email is required</div>';
+        $email_error = '<div class="errno" style="visibility:hidden;">Email is required</div>';
         $email_status = "";
     }
     if(empty($password)){
 
-        $password_error = '<div class="errno" style="visibility:hidden;"">Password is required</div>';
+        $password_error = '<div class="errno" style="visibility:hidden;">Password is required</div>';
         $password_status = "";
     }
 
@@ -44,7 +44,7 @@ if (isset($_POST['login'])) {
                     exit();
 
                 }else  {
-                    $password_error = '<div class="errno" style="visibility:hidden;"">Please enter a correct password</div>';
+                    $password_error = '<div class="errno" style="visibility:hidden;">Please enter a correct password</div>';
 
                 }
                 

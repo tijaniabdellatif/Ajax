@@ -19,13 +19,13 @@ if (isset($_POST['signup'])) {
 
     if (empty($fullname)) {
 
-        $name_error = '<div class="errno" style="visibility:hidden;"">Full name is required</div>';
+        $name_error = '<div class="errno" style="visibility:hidden;">Full name is required</div>';
         $name_status = "";
     }
 
     if(empty($email)){
 
-        $email_error = '<div class="errno" style="visibility:hidden;"">Email is required</div>';
+        $email_error = '<div class="errno" style="visibility:hidden;">Email is required</div>';
         $email_status = "";
     }else{
 
