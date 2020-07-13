@@ -12,7 +12,7 @@ class Database {
         try{
 
             $this->con = new PDO("mysql:host=".$this->host.";dbname=".$this->db_name,$this->db_user,$this->db_pass);
-            echo "connexion is well passed";
+         
 
         }catch(Exception $e){
 
