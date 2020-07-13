@@ -4,9 +4,9 @@ include 'init.php';
 $obj = new Base();
 if (isset($_POST['signup'])) {
 
-    $fullname = $_POST['full_name'];
-    $email = $_POST['full_email'];
-    $password = $_POST['passsword'];
+    $fullname = XSS($_POST['full_name']);
+    $email = XSS($_POST['full_email']);
+    $password = XSS($_POST['passsword']);
     $img = $_FILES['img']['name'];
     $img_tmp = $_FILES['img']['tmp_name'];
 
@@ -86,10 +86,11 @@ if (isset($_POST['signup'])) {
         $values = [$fullname,$email,password_hash($password,PASSWORD_BCRYPT),$img,$status];
         if($obj->GeneralQuery($query,$values)){
 
-            echo 'success';
+            CreateSession("account_success","Your Account is Created");
+            header("Location: login.php");
+            exit();
         }
-       
-
+    
     }
 }
 ?>

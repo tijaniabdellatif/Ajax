@@ -1,5 +1,15 @@
   <div class="form-area">
 
+      <?php if (isset($_SESSION['account_success'])) : ?>
+
+          <div class="alert alert-success">
+             
+          <?= $_SESSION['account_success']; ?>
+
+          </div>
+      <?php endif; ?>
+      <?php unset($_SESSION['account_success']); ?>
+
       <form action="" method="post">
           <div class="group">
 

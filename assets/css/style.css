@@ -654,6 +654,23 @@ top:33%;
     font-size: 1.2rem;
 }
 
+.alert{
+    width:100%;
+    height:3.5rem;
+    line-height: 3.5rem;
+    border-radius: 4px;
+    position: relative;
+}
+
+.alert-success{
+
+    background-color: var(--color-green);
+    color : var(--color-white);
+    position: absolute;
+    top : -6.5rem;
+
+}
+
 /*=== Responsive media queries ===*/
 @media (max-width:765px) {
 
