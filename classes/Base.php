@@ -29,6 +29,12 @@ class Base extends Database
         return $this->Query->fetchAll(PDO::FETCH_OBJ);
     }
 
+    public function SingleRow(){
+
+        return $this->Query->fetch(PDO::FETCH_OBJ);
+
+    }
+
 
     
 }

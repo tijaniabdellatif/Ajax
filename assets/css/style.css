@@ -660,6 +660,9 @@ top:33%;
     line-height: 3.5rem;
     border-radius: 4px;
     position: relative;
+    text-align: left;
+    padding:0 1rem;
+    font-size: 1.2rem;
 }
 
 .alert-success{
