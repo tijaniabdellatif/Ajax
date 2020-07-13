@@ -13,55 +13,46 @@ if (isset($_POST["change_password"])) {
         $current_password_err = '<div class="errno" style="visibility:hidden;">Current Password is required</div>';
         $current_status = "";
     }
-    if(empty($new_password)){
+    if (empty($new_password)) {
 
         $new_password_err = '<div class="errno" style="visibility:hidden;">New Password is required</div>';
         $new_status = "";
-    }
-    else if(strlen($new_password) < 5){
+    } else if (strlen($new_password) < 5) {
 
         $new_password_err = '<div class="errno" style="visibility:hidden;">New Password is Too short</div>';
         $new_status = "";
-
     }
-    if(empty($retype_password)){
+    if (empty($retype_password)) {
 
         $retype_password_err = '<div class="errno" style="visibility:hidden;">Retype Password is required</div>';
         $retype_status = "";
-        
-    }
-
-    else if($new_password != $retype_password){
+    } else if ($new_password != $retype_password) {
 
         $new_password_err = '<div class="errno" style="visibility:hidden;">Password is not conform</div>';
         $new_status = "";
-
     }
 
 
-    if(!empty($current_status) && !empty($current_status) && !empty($retype_status)){
+    if (!empty($current_status) && !empty($current_status) && !empty($retype_status)) {
 
-         $query = "SELECT password FROM users WHERE id = ?";
-         $param = array($_SESSION['user_id']);
-        if($obj->GeneralQuery($query,$param)){
+        $query = "SELECT password FROM users WHERE id = ?";
+        $param = array($_SESSION['user_id']);
+        if ($obj->GeneralQuery($query, $param)) {
 
             $row = $obj->SingleRow();
             $db_pass = $row->password;
 
-            if(password_verify($current_password,$db_pass)){
-               
+            if (password_verify($current_password, $db_pass)) {
+
                 $sql = "UPDATE users SET password = ? WHERE id = ? ";
-                $par = array(password_hash($new_password,PASSWORD_BCRYPT),$_SESSION['user_id']);
-                if($obj->GeneralQuery($sql,$par)){
-                             
+                $par = array(password_hash($new_password, PASSWORD_BCRYPT), $_SESSION['user_id']);
+                if ($obj->GeneralQuery($sql, $par)) {
+
                     echo "password is changed";
-
                 }
-
-            }else{
+            } else {
 
                 $current_password_err = '<div class="errno" style="visibility:hidden;">Please enter the correct password</div>';
-               
             }
         }
     }
@@ -88,9 +79,11 @@ if (isset($_POST["change_password"])) {
         </section>
     </div>
     <?php include 'components/js.php' ?>
+    <!-- <script src="assets/js/alert.js"></script> -->
     <script src="assets/js/script.js"></script>
     <script src="assets/js/control.js"></script>
-    <script src="assets/js/display.js"></script>
+    <!-- <script src="assets/js/display.js"></script> -->
+
 </body>
 
 </html>

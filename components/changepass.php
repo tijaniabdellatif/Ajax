@@ -1,7 +1,7 @@
     <div class="form-section">
 
         <div class="form-grid">
-            <form action="" method="post">
+            <form action="" method="post" id="form">
                 <div class="group">
 
                     <h2 class="form-heading">
@@ -18,7 +18,7 @@
                                                                                                                                 if (isset($current_password)) : echo $current_password;
                                                                                                                                 endif;
 
-                                                                                                                                ?>">
+                                                                                                     ?>">
                     <div class="name-error error">
                         <?php if (isset($current_password_err)) :  ?>
                             <?php echo $current_password_err; ?>
@@ -29,7 +29,7 @@
 
                 <div class="group">
 
-                    <input type="password" name="new_passsword" class="control" placeholder="Create New password..." value="<?php
+                    <input type="password" id="new" name="new_passsword" class="control" placeholder="Create New password..." value="<?php
 
                                                                                                                             if (isset($new_password)) : echo $new_password;
                         endif;
@@ -42,7 +42,7 @@
                 </div>
                 <div class="group">
 
-                    <input type="password" name="retype_passsword" class="control" placeholder="Retype New password..." value="<?php
+                    <input type="password" id="new1" name="retype_passsword" class="control" placeholder="Retype New password..." value="<?php
 
                                                                                                                                 if (isset($retype_password)) : echo $retype_password;
                                                                                                                                 endif;

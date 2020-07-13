@@ -29,7 +29,6 @@
 
 $(document).ready(function(){
 
-
     $(document).on('change','#file',function(){
 
         var image = $("#file").val();
