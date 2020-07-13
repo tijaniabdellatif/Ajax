@@ -4,6 +4,12 @@ $(document).ready(function(){
 
         $('.flash').hide();
     })
+
+    setTimeout(() => {
+        
+        $('.flash').fadeOut("slow");
+
+    }, 3000);
 });
 
 // function close() {

@@ -48,7 +48,9 @@ if (isset($_POST["change_password"])) {
                 $par = array(password_hash($new_password, PASSWORD_BCRYPT), $_SESSION['user_id']);
                 if ($obj->GeneralQuery($sql, $par)) {
 
-                    echo "password is changed";
+                    CreateSession("password_update","Your password is successfuly updated");
+                    header("Location:index.php");
+
                 }
             } else {
 
@@ -57,11 +59,7 @@ if (isset($_POST["change_password"])) {
         }
     }
 }
-
-
-
 ?>
-
 <!DOCTYPE html>
 <html lang="en">
 

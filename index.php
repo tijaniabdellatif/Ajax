@@ -18,21 +18,24 @@ if (!isset($_SESSION['user_id'])) : ?>
 
 <body>
 
-    <div class="flash success-flash">
-        <span class="close">&times;</span>
-        <div class="flash-heading">
+    <?php if (isset($_SESSION['password_update'])) : ?>
 
-            <h3><span class="checked">&#10004;</span>Success: you have done!</h3>
-
+        <div class="flash success-flash">
+            <span class="close">&times;</span>
+            <div class="flash-heading">
+                <h3><span class="checked">&#10004;</span>Success: you have done!</h3>
+            </div>
+            <div class="flash-body">
+                <p><?php echo $_SESSION['password_update']; ?></p>
+            </div>
         </div>
-        <div class="flash-body">
 
-            <p>Your password is successfully updated</p>
-        </div>
+    <?php endif; ?>
+    <?php  unset($_SESSION['password_update']); ?>
 
-    </div>
 
-    <div class="flash error-flash">
+
+    <!-- <div class="flash error-flash">
         <span class="close">&times;</span>
         <div class="flash-heading">
 
@@ -43,7 +46,7 @@ if (!isset($_SESSION['user_id'])) : ?>
             <p><a href="http://localhost/application_chat/Ajax/Ajax/login.php">Try Again & Login</a></p>
         </div>
 
-    </div>
+    </div> -->
     <?php include 'components/nav.php' ?>
     <div class="chat-container">
         <?php include 'components/sidebar.php' ?>
