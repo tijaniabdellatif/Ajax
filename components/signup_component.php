@@ -1,6 +1,6 @@
 <div class="form-area">
 
-    <form action="signup.php" method="post" enctype="multipart/form-data" id="form">
+    <form action="" method="post" enctype="multipart/form-data" id="form">
         <div class="group">
 
             <h2 class="form-heading">
@@ -8,7 +8,7 @@
             </h2>
         </div>
         <div class="group">
-            <input type="text" name="full_name" class="control" placeholder="Enter Full Name">
+            <input type="text" name="full_name" class="control" placeholder="Enter Full Name" value="<?php if(isset($fullname)): echo $fullname;  endif; ?>">
             <div class="name-error error">
                 <?php if (isset($name_error)) :  ?>
                     <?php echo $name_error; ?>
@@ -16,7 +16,7 @@
             </div>
         </div>
         <div class="group">
-            <input type="email" name="full_email" class="control" placeholder="Enter Your Email">
+            <input type="email" name="full_email" class="control" placeholder="Enter Your Email" value="<?php if(isset($email)): echo $email;  endif; ?>">
             <div class="name-error error">
                 <?php if (isset($email_error)) :  ?>
                     <?php echo $email_error; ?>
@@ -24,7 +24,7 @@
             </div>
         </div>
         <div class="group">
-            <input type="password" name="passsword" class="control" placeholder="Create password...">
+            <input type="password" name="passsword" class="control" placeholder="Create password..." value="<?php if(isset($password)): echo $password;  endif; ?>">
             <div class="name-error error">
                 <?php if (isset($password_error)) :  ?>
                     <?php echo $password_error; ?>

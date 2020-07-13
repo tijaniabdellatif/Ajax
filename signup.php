@@ -68,7 +68,6 @@ if (isset($_POST['signup'])) {
     }
 
     //validate the image 
-
     if(empty($img)){
         $img_error = '<div class="errno" style="visibility:hidden;">Image is required</div>';
         $img_status = "";
@@ -76,6 +75,21 @@ if (isset($_POST['signup'])) {
 
         $img_error = '<div class="errno" style="visibility:hidden;">Format is not Valid</div>';
         $img_status = "";
+    }
+
+    if(!empty($name_status) && !empty($email_status) && !empty($password_status) && !empty($img_status))
+    {
+         
+        move_uploaded_file($img_tmp,"$img_path/$img");
+        $status = 0;
+        $query = "INSERT INTO users (name,email,password,image,status) VALUES(?,?,?,?,?)";
+        $values = [$fullname,$email,password_hash($password,PASSWORD_BCRYPT),$img,$status];
+        if($obj->GeneralQuery($query,$values)){
+
+            echo 'success';
+        }
+       
+
     }
 }
 ?>
